@@ -15,7 +15,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var blueSwitch: UISwitch!
     
+    @IBOutlet weak var redSlider: UISlider!
     
+    
+    @IBOutlet weak var greenSlider: UISlider!
+    
+    @IBAction func sliderChange(_ sender: Any) {
+        updateColor()
+    }
+    
+    @IBOutlet weak var blueSlider: UISlider!
+    // ------
     @IBOutlet weak var colorView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
